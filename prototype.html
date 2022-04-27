@@ -6,60 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONISOFT 2022</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="custom.css">-->
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: white;">
+        <div class="container">
             <a href="./prototype.html" class="navbar-brand">
                 <img src="LOGOCONISOFT22.png" alt="Logo CONISOFT 2022" style="filter: brightness(0); height: 4rem;  width: auto;">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#welcome" class="nav-link">Welcome</a></li>
+                    <li class="nav-item"><a href="#jiisic" class="nav-link">JIISIC'22</a></li>
+                    <li class="nav-item"><a href="#topics" class="nav-link">Topics</a></li>
+                    <li class="nav-item"><a href="#cfp" class="nav-link">CFP</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="container-fluid p-5 text-light" style="background-color: #042; background-image: url('puebla.jpg'); background-size: cover; background-blend-mode: multiply;">
-        <div class="row">
-            <div class="col-4 d-none d-lg-block">
-                <img src="LOGOCONISOFT22.png" alt="Logo CONISOFT 2022" class="img-fluid" style="filter: brightness(0) invert(1);">
-            </div>
-            <div class="col ms-0 ms-sm-5">
-                <h1 class="fw-bold">The 10th International Conference in Software Engineering Research and Innovation (CONISOFT 22)</h1>
-                <h2>Universidad Tecnológica Bilingüe Internacional y Sustentable de Puebla</h2>
-                <h1>JIISIC'2022</h1>
-                <div class="row mt-3">
-                    <div class="col"><img src="LOGO UTBIS PNG.png" alt="Logo UTBIS" class="img-fluid" style="filter: brightness(0) invert(1);"></div>
-                    <div class="col"><img src="ieee.png" alt="Logo UTBIS" class="img-fluid"></div>
-                    <div class="col"><img src="computerS.png" alt="Logo IEEE Computer Society" class="img-fluid"></div>
+    <div class="container-fluid" style="background-color: #042; background-image: url('puebla.jpg'); background-size: cover; background-blend-mode: multiply;">
+        <div class="container-xxl p-5 text-light">
+            <div class="row">
+                <div class="col-4 d-none d-lg-block">
+                    <img src="LOGOCONISOFT22.png" alt="Logo CONISOFT 2022" class="img-fluid" style="filter: brightness(0) invert(1);">
+                </div>
+                <div class="col ms-sm-5">
+                    <h1 class="fw-bold">The 10th International Conference in Software Engineering Research and Innovation (CONISOFT 22)</h1>
+                    <h2>Universidad Tecnológica Bilingüe Internacional y Sustentable de Puebla</h2>
+                    <h1>JIISIC'2022</h1>
+                    <div class="row mt-3">
+                        <div class="col"><img src="LOGO UTBIS PNG.png" alt="Logo UTBIS" class="img-fluid w-100" style="filter: brightness(0) invert(1);"></div>
+                        <div class="col"><img src="ieee.png" alt="Logo UTBIS" class="img-fluid w-100"></div>
+                        <div class="col"><img src="computerS.png" alt="Logo IEEE Computer Society" class="img-fluid w-100"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container my-5">
         <div class="row">
-            <div class="col-md-12">
-                <h1 tabindex="0">Welcome to CONISOFT 2022</h1>
+            <div class="col-md-6">
+                <h1 id="welcome" tabindex="0">Welcome to CONISOFT 2022</h1>
                 <p class="text-danger">Regarding the COVID 19 pandemic, to safeguard the health of participants, CONISOFT 2022 conference will be hybrid.</p>
                 <p>The 10th International Conference in Software Engineering Research and Innovation (CONISOFT 2022) will be held at Universidad Tecnológica Bilingüe Internacional y Sustentable de Puebla, October 24-28, 2022. The purpose of the conference is to bring together practitioners and researchers from academy, industry, and government in order to advance the state of the art in Software Engineering, as well as generating synergy between academy and industry, defining a collaboration strategy to support and promote the development of the software industry in Mexico and worldwide. Papers that combine theory and practice are especially welcome.</p>
                 <p class="text-danger text-center fs-3">Submission Deadline: May 15, 2022</p>
                 <p class="text-center fs-3"><a href="https://conisoft.org/2022/documents/CFP_CONISOFT2022_v3.pdf" target="_blank">Download CFP</a></p>
-                <hr>
+                <hr class="d-md-none">
             </div>
-            <div class="col-md-12 row">
-                <div >
-                    <h1>JIISIC</h1>
-                    <p>The Ibero-American Conference on Software Engineering and Knowledge Engineering (JIISIC) is a space for the exchange of knowledge, experiences and good practices on frontier issues related to Computer Science.</p>
-                    <p>From the first version in 2001 until today, JIISIC has summoned more participants every year and has become a meeting of high value for scientists, teachers, technicians and students from all the countries of the region. Its participants form and expand a solid network of contacts, broaden the perspectives of scientific and professional cooperation and define new lines of technology transfer.</p>
-                    
-                </div>
-                <div alingn="center">
-                     <img src="jiisic 22.PNG" alt ="JIISIC" >
-                </div>
-                <hr>
+            <div class="col-md-6">
+                <h1 tabindex="0" id="jiisic">JIISIC</h1>
+                <p>The Ibero-American Conference on Software Engineering and Knowledge Engineering (JIISIC) is a space for the exchange of knowledge, experiences and good practices on frontier issues related to Computer Science.</p>
+                <p>From the first version in 2001 until today, JIISIC has summoned more participants every year and has become a meeting of high value for scientists, teachers, technicians and students from all the countries of the region. Its participants form and expand a solid network of contacts, broaden the perspectives of scientific and professional cooperation and define new lines of technology transfer.</p>
+                <img src="jiisic 22.PNG" alt ="Logo JIISIC" class="mx-auto d-block">
             </div>
-            <div class="col-md-12" >
-                <h1>Topics</h1>
+            <div class="col-md-12">
+                <hr>
+                <h1 tabindex="0" id="topics">Topics</h1>
                 <div class="row">
-                            <div class="col">
-                            <h2>Core Themes</h2>
+                    <div class="col-md-6">
+                        <h4>Core Themes</h4>
                         <ul>
                             <li>Requirements engineering</li>
                             <li>Systems modelling: languages, mechanisms of formalization</li>
@@ -68,63 +76,85 @@
                             <li>Process models</li>
                             <li>Software metrics</li>
                         </ul>
-                    </div>
-
-                        <div class="col">
-                        <h2>Interaction with Other Disciplines</h2>
+                        <h4>Empirical Software Engineering</h4>
                         <ul>
-                            <li>User-centered design: human-computer interaction, usability engineering</li>
-                            <li>Social Issues in software engineering: psychology, sociology</li>
-                        </ul>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col">
-                            <h2>Empirical Software Engineering</h2>
                             <li>Empirical Methods</li>
                             <li>Statistical Methods and Measurement</li>
                             <li>Simulation Methods</li>
                             <li>Missing Data in Software Engineering</li>
                             <li>Experimentation in Software Engineering</li>
                             <li>Human Factors in Software Engineering</li>
-                        </div>
-                        <div class="col">
-                            <h2>Formal Methods</h2>
+                        </ul>
+                        <h4>Trends in Software Engineering</h4>
+                        <ul>
+                            <li>Construction of complex systems: recommendation systems</li>
+                            <li>Software Engineering for very small mobile software applications and context, and very large software ecosystems</li>
+                            <li>Modelling and knowledge management</li>
+                            <li>Support methodologies: agents-based methodologies, natural language processing, machine learning</li>
+                            <li>Software Engineering for Cloud Computing, Big Data, Social Computing</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Interaction with Other Disciplines</h4>
+                        <ul>
+                            <li>User-centered design: human-computer interaction, usability engineering</li>
+                            <li>Social Issues in software engineering: psychology, sociology</li>
+                        </ul>
+                        <h4>Formal Methods</h4>
+                        <ul>
                             <li>Theoretical basis for software engineering</li>
                             <li>Formal methods for software engineering</li>
                             <li>Experimental evaluation and validation</li>
                             <li>The split between industry practice and academic research</li>
-                        </div>
-                        <div class="w-100"></div>
-                            <div class="col">
-                                <h2>Trends in Software Engineering</h2>
-                                <li>Construction of complex systems: recommendation systems</li>
-                                <li>Software Engineering for very small mobile software applications and context, and very large software ecosystems</li>
-                                <li>Modelling and knowledge management</li>
-                                <li>Support methodologies: agents-based methodologies, natural language processing, machine learning</li>
-                                <li>Software Engineering for Cloud Computing, Big Data, Social Computing</li>
-                            </div>  
- 
-                            <div class="col" >
-                                <h2>Software Engineering Education (SEE)</h2>
-                                <li>Models and Techniques for SEE</li>
-                                <li>Teaching approaches for SEE</li>
-                                <li>Tools for SEE</li>
-                                <li>Strategies and instruments for assessment SEE</li>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <h2>Industry and government experiences</h2>
-                                <li>Cases in industry and government</li>
-                                <li>Study cases in industry and government</li>
-                            </div>
+                        </ul>
+                        <h4>Software Engineering Education (SEE)</h4>
+                        <ul>
+                            <li>Models and Techniques for SEE</li>
+                            <li>Teaching approaches for SEE</li>
+                            <li>Tools for SEE</li>
+                            <li>Strategies and instruments for assessment of SEE</li>
+                        </ul>
+                        <h4>Industry and Government Experiences</h4>
+                        <ul>
+                            <li>Cases in industry and government</li>
+                            <li>Study cases in industry and government</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
             </div>
-            <hr>
+            <div class="col-md-12">
+                <h1 tabindex="0" id="cfp">Call for papers</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Participation Modalities <small>(Types of Works)</small></h4>
+                        <ul class="fs-5">
+                            <li>TRACK 1: <small>CONISOFT, scientific papers in English (original research, basic and experimental).<br><a href="https://cmt3.research.microsoft.com/CONISOFT2022">Link to Send</a></small></li>
+                            <li>TRACK 2: <small>CONISOFT, Work in progress in English. Papers describing works that are at an early stage of the investigation.<br><a href="https://cmt3.research.microsoft.com/CONISOFT2022">Link to Send</a></small></li>
+                            <li>TRACK 3: <small>JIISIC, Scientific papers in Spanish (original research, basic and experimental).<br><a href="https://cmt3.research.microsoft.com/JIISIC2022">Link to Send</a></small></li>
+                        </ul>
+                        <h4>Requirements</h4>
+                        <ul>
+                            <li><strong>Paper length:</strong> (a) Scientific papers (Track 1, Track 3) will be submitted as full papers, from 8 pages and up to 10 pages; and (b) works in progress (Track 2) will be submitted as short papers, from 6 pages and up to 8.</li>
+                            <li><strong>Languages:</strong> Due to the joint organization of CONISOFT and JIISIC, the organizing committee agreed for this year, the CONISOFT will accept articles in English and the JIISIC will accept articles in Spanish</li>
+                            <li>Papers must be original works, not have been published before, nor subjected simultaneously to other events.</li>
+                            <li>Submitted papers will be evaluated by an international reviewers committee composed of renowned researchers and professionals, which can be consulted on the Web site of the conference.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Important Dates</h4>
+                        <ul class="fs-5">
+                            <li>Paper Submission: <small>May 15th 2022</small></li>
+                            <li>Notification of Acceptance: <small>July 8th 2022</small></li>
+                            <li>Sending Final Version in EasyChair: <small>August 14th 2022</small></li>
+                            <li>Early Registration: <small>August 27th 2022</small></li>
+                            <li>Payment Deadline: <small>August 21st 2022</small></li>
+                            <li>CONISOFT 2022: <small>October 24-28th 2022</small></li>
+                        </ul>
+                        <p class="text-center fs-3"><a href="https://conisoft.org/2022/documents/CFP_CONISOFT2022_v3.pdf" target="_blank">Download CFP</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h1>Call for papers</h1>
-                <h2 tabindex="0">Participation Modalities (Types of works)</h2>
-            </div>
-            <hr>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -1,4 +1,1 @@
-div.presentation>img {
-    max-height: 50px;
-    width: auto;
-}
+h1 { margin-top: -10rem; padding-top: 10rem; -webkit-background-clip: content-box; background-clip: content-box; }
