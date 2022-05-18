@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Practicas--\\HTLM Fromularios"
+		},
+		{
+			"path": "..\\..\\Practicas--\\Prueva de Pagina web dinamica menu"
+		},
+		{
+			"path": "..\\..\\..\\Escritorio\\HTML\\Bootstrap NAV_VAR"
+		},
+		{
+			"path": "..\\..\\..\\Escritorio\\HTML\\Carousel"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "conisoft2022"
+	}
+}
