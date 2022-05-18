@@ -1,1 +1,17 @@
 h1 { margin-top: -10rem; padding-top: 10rem; -webkit-background-clip: content-box; background-clip: content-box; }
+
+.banner {
+    background-color: #042;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.banner.bumper {
+    height: 4rem;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
