@@ -15,6 +15,26 @@ h1, h2, h3, h4, h5, h6, .navbar *, .text-danger {font-weight: 400;}
 
 p, li {font-weight: 300; font-size: 1.25rem !important;}
 
+footer * {
+    margin-bottom: 0;
+}
+
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sponsors img {
+    margin: 32px;
+    height: 100px;
+}
+
+iframe {
+    width: 100% !important;
+    height: 450px;
+}
+
 .banner * {
     color: white;
 }
