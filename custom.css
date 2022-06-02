@@ -57,3 +57,51 @@ h1 { scroll-margin-top: var(--navbar-size); }
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.flex-last-editions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-last-editions a {
+    text-decoration: none;
+}
+
+.flex-last-editions figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 30vw;
+    min-width: 250px;
+    height: 250px;
+    filter: grayscale(0.90);
+    transition: all 400ms ease-out;
+    margin: 0;
+}
+
+.flex-last-editions a:hover>figure {
+    filter: none;
+}
+
+.flex-last-editions figure p, .flex-last-editions figure h2 {
+    color: white;
+    text-shadow: 2px 2px #000D;
+}
+
+.flex-last-editions .title-year {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.flex-last-editions figure .fadein {
+    transition: all 400ms ease-out;
+}
+
+.flex-last-editions a:hover>figure .fadein {
+    top: 10px;
+}
